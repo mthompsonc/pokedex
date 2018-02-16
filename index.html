@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Pokedex</title>
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-  <div class="searchbox">
-    <label> Ingresa el nombre del pokemon que buscas</label>
-    <input type="text" id="pokeInput">
-    <button id="pokesearch" data-toggle="modal" data-target=".bs-example-modal-lg">Buscar</button>
-  </div>
-
-  <div class="imgs">
-    
-  </div>
-
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h1>Choose by Type</h1>
+  <head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12">
+          <img src="assets/img/pokelogo.png" alt="logotipo" class="img-responsive center-block logo">
+        </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2">
-            <form action="javascript:void(0)" class="chooseType">
-              <ul> 
-                <li><input type="radio" id="search" value="fire"> Fire</li>
-                <li><input type="radio" id="search" value="water"> Water</li>
-                <li><input type="radio" id="search" value="poison"> Poison</li>
-                <li> <input type="radio" id="search" value="flying"> Flying</li>
-                <li><input type="radio" id="search" value="grass"> Grass</li>
-                <li><input type="radio" id="search" value="electric"> Electric</li>
-                <li><input type="radio" id="search" value="ground"> Ground</li>
-                <li><input type="radio" id="search" value="ice"> Ice</li>
-                <li><input type="radio" id="search" value="rock"> Rock</li>
-                <li><input type="radio" id="search" value="bug"> Bug</li>
-                <li><input type="radio" id="search" value="dragon"> Dragon</li>
-                <li><input type="radio" id="search" value="ghost"> Ghost</li>
-                <li><input type="radio" id="search" value="steel"> Steel</li>
-                <li><input type="radio" id="search" value="fairy"> Fairy</li>
-                <li><input type="radio" id="search" value="dark"> Dark</li>
-              </ul>            
-            </form>
+      <div class="row">
+        <h1 class="text-center">Search your pokemon by name!</h1>
+      </div>
+      <div class="col-md-offset-4 col-md-5 col-lg -offset-4 col-lg-5 searchbox">
+        <div class="center-block">
+          <input type="text" id="pokeInput">
+          <button id="pokesearch">catch em' all!</button>
+        </div>
+      </div>
+      <div class="row searchbox">
+        <div class="col-md-offset-4 col-md-5 col-lg -offset-4 col-lg-5">
+          <div class="imgs">
+            <!-- Aquí estarán los elementos de la búsqueda por nombre -->
           </div>
-          <!-- lista pokemones -->
-          <div class="col-md-8" id="pokemonContainer">
-          </div>        
-        </div>        
-      </div> <!-- /container -->
-    </div> <!-- /row -->
-  </div> <!-- /container-fluid -->
-  <script
-  src="http://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <script src="assets/js/app.js"></script>
-  <script src="assets/js/type.js"></script>
-</body>
-</html>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 col-lg-12 text-center">
+          <h1>Choose by Type</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2">
+              <form action="javascript:void(0)" class="chooseType">
+                <ul>
+                  <li><input type="radio" id="search" value="fire"> Fire</li>
+                  <li><input type="radio" id="search" value="water"> Water</li>
+                  <li><input type="radio" id="search" value="poison"> Poison</li>
+                  <li> <input type="radio" id="search" value="flying"> Flying</li>
+                  <li><input type="radio" id="search" value="grass"> Grass</li>
+                  <li><input type="radio" id="search" value="electric"> Electric</li>
+                  <li><input type="radio" id="search" value="ground"> Ground</li>
+                  <li><input type="radio" id="search" value="ice"> Ice</li>
+                  <li><input type="radio" id="search" value="rock"> Rock</li>
+                  <li><input type="radio" id="search" value="bug"> Bug</li>
+                  <li><input type="radio" id="search" value="dragon"> Dragon</li>
+                  <li><input type="radio" id="search" value="ghost"> Ghost</li>
+                  <li><input type="radio" id="search" value="steel"> Steel</li>
+                  <li><input type="radio" id="search" value="fairy"> Fairy</li>
+                  <li><input type="radio" id="search" value="dark"> Dark</li>
+                </ul>
+              </form>
+            </div>
+            <!-- lista pokemones -->
+            <div class="col-md-8" id="pokemonContainer">
+            </div>
+          </div>
+          </div> <!-- /container -->
+          </div> <!-- /row -->
+          </div> <!-- /container-fluid -->
+          <script
+          src="http://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+          <script src="assets/js/app.js"></script>
+          <script src="assets/js/type.js"></script>
+        </body>
+      </html>

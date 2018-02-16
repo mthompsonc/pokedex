@@ -11,3 +11,24 @@ Gris iconos : #646464
 Rojo : #e84848
 
 */
+
+.logo{
+  width: 25em;
+}
+
+.searchbox{
+
+}
+
+.pokemoncito{
+  width: 60%;
+}
+
+.chooseType{
+  background-color: #EAEAEA;
+  padding: 1em;
+}
+
+.chooseType ul li{
+  list-style: none;
+}

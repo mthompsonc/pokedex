@@ -14,7 +14,7 @@ $(document).ready(function(){
       var containerImg=$('.imgs').empty();
       $.getJSON(pokeURL2, function(data2){
       
-      containerImg.append('<div class="container"><div class="row"><div class="col-md-5 col-lg-5"><img id='+data.id+' src="'+ data.sprites.front_default +'" alt="placeholder+image"></div><div class="col-md-7 col-lg-7"><h3>'+ data.name +'</h3><p>'+ data2.flavor_text_entries[1].flavor_text+'</p></div></div></div>');
+      containerImg.append('<div class="row"><div class="col-md-5 col-lg-5"><img id='+data.id+' src="'+ data.sprites.front_default +'" alt="placeholder+image" class"center-block"></div></div><div class="row"><div class="col-md-5 col-lg-5"><h2 class="text-center">'+ data.name +'</h2><p><strong>Weight:</strong> '+ data.weight +'</p><p><strong>Height: </strong>'+ data.height +'</p><p><strong>Description: </strong>'+ data2.flavor_text_entries[1].flavor_text+'</p></div></div>');
       })
       
     })

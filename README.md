@@ -7,7 +7,7 @@ Es un web que utiliza la API de Pokemon (pokeapi). Utilizamos los nombres de cad
 
 - - -
 
-**Recomendamos autorizar la carga de "scripts no seguros", para lograr visualizar este proyecto en Gh-Pages.
+* Recomendamos autorizar la carga de "scripts no seguros", para lograr visualizar este proyecto en Gh-Pages.
 
 ## Previsualización.
 

@@ -8,8 +8,3 @@ Es un web que utiliza la API de Pokemon (pokeapi). Para la búsqueda de pokemone
 ## Desarrollado para
 
 [Laboratoria](http://laboratoria.la/)
-
-### Desarrollado por
-
-* Camila Cornejos
-* María Paz Thompson

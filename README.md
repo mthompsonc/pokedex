@@ -2,12 +2,12 @@
 
 ## Descripción
 
-Es un web que utiliza la API de Pokemon (pokeapi). Utilizamos los nombres de cada personaje, planeta y nave, que incluye la API.
+Es un web que utiliza la API de Pokemon (pokeapi). Utilizamos los nombres de cada personaje y descripción, que incluye la API.
+
 
 - - -
 
-**Recomendamos descargar este trabajo para obtener una visualización óptima (Api no funciona en GH-PAGES).**
-
+**Recomendamos autorizar la carga de "scripts no seguros", para lograr visualizar este proyecto en Gh-Pages.
 
 ## Previsualización.
 
